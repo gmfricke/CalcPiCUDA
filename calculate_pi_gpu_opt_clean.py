@@ -5,8 +5,9 @@ import numba.cuda as cuda
 from numba import vectorize
 import math
 
-# Here we calculate pi by assessing the area under the curve using the gpu (float32 precision)
+# Here we calculate pi by assessing the area under the curve using the GPU (float32 precision)
 # Then we check the value against what is calculated in numpy
+# Original CPU code from -> source: https://github.com/UNM-CARC/QuickBytes/blob/master/workshop_slides/CS_Math_471.pdf
 
 #@cuda.reduce
 #def sum_reduce(a, b):
